@@ -1,0 +1,177 @@
+
+/*=============================================
+    14: Footer
+==============================================*/
+
+.top-footer {
+    padding: 50px 0 40px 0;
+}
+.footer a { color: #e0f3ff }
+.footer a:hover { color: #fff; }
+
+/* 14.1: Single footer */
+.single-footer h2 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 3px;
+    margin-bottom: 30px;
+}
+.single-footer h2:before,
+.single-footer h2:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 60px;
+    height: 10px;
+    background-size: 6px 18px;
+}
+.single-footer h2:before {
+    bottom: -10px;
+    background-image: -webkit-linear-gradient(135deg, transparent 14px, #aebcc5 0),
+    -webkit-linear-gradient(45deg, transparent 14px, #aebcc5 0);
+    background-image: -o-linear-gradient(135deg, transparent 14px, #aebcc5 0),
+    -o-linear-gradient(45deg, transparent 14px, #aebcc5 0);
+    background-image: linear-gradient(-45deg, transparent 14px, #aebcc5 0),
+    linear-gradient(45deg, transparent 14px, #aebcc5 0);
+}
+.single-footer h2:after {
+    bottom: -8px;
+    background-image: -webkit-linear-gradient(135deg, transparent 14px, #1b435d 0),
+    -webkit-linear-gradient(45deg, transparent 14px, #1b435d 0);
+    background-image: -o-linear-gradient(135deg, transparent 14px, #1b435d 0),
+    -o-linear-gradient(45deg, transparent 14px, #1b435d 0);
+    background-image: linear-gradient(-45deg, transparent 14px, #1b435d 0),
+    linear-gradient(45deg, transparent 14px, #1b435d 0);
+}
+
+/* 14.2: Footer form */
+.single-footer form {
+    position: relative;
+    margin-top: 25px;
+}
+.single-footer form input {
+    height: 50px;
+    border: 1px solid transparent !important;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.03);
+    font-family: "Work Sans", sans-serif;
+    padding: 0 30px;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    color: #fff;
+}
+.single-footer form input:focus {
+    background: rgba(61, 95, 117, 0.5);
+    color: #fff;
+}
+.single-footer button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    right: 24px;
+}
+
+/* 14.3: Footer contact info */
+.footer-contact-info {
+    list-style: none;
+    padding: 0;
+}
+.footer-contact-info li {
+    font-family: "Work Sans", sans-serif;
+    padding: 7px 0 7px 23px;
+    position: relative;
+}
+.footer-contact-info li i{
+    position: absolute;
+    left: 0;
+    width: 15px;
+    text-align: center;
+    line-height: 35px;
+    top: 0;
+}
+
+/* 14.4: Footer social icons */
+.footer-social-icons {
+    padding: 0;
+}
+.footer-social-icons li {
+    display: inline-block;
+    list-style: none;
+}
+.footer-social-icons li:not(:last-child) {
+    margin-right: 10px;
+}
+.footer-social-icons li a {
+    font-size: 12px;
+    color: #fff;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #3c5e75;
+    border-radius: 100%;
+    display: block;
+    text-align: center;
+    background: transparent;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.footer-social-icons li a:hover {
+    color: #ff895d;
+    background: #fff;
+    border-color: #fff;
+}
+
+/* 14.5: Single footer post */
+.single-footer-post:last-child {
+    margin-top: 20px;
+}
+.single-footer-post a {
+    margin-bottom: 5px;
+    line-height: 24px;
+    display: inline-block;
+}
+.single-footer-post span {
+    font-size: 12px;
+}
+.single-footer-post span i {
+    font-size: 10px;
+    margin-right: 7px;
+    position: relative;
+    top: -2px;
+}
+
+/* 14.6: Footer links */
+.footer-links {
+    padding: 0;
+    list-style: none;
+}
+.footer-links li {
+    padding: 6.5px 0;
+}
+.footer-links li a {}
+.footer-links li a i{
+    margin-right: 8px;
+}
+.copyright {
+    border-top: 1px solid #3d5f75;
+    border-bottom: 1px solid #3d5f75;
+}
+.copyright p {
+    padding: 30px 0;
+    text-align: center;
+}
+.copyright a {
+    font-weight: 600;
+    color: #ff895d;
+}
+.copyright a:hover {
+    color: #ff895d;
+}

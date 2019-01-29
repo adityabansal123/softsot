@@ -1,0 +1,53 @@
+
+/*=============================================
+    10: Why us
+==============================================*/
+
+.single-reason span {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e0f3ff;
+    border-radius: 100%;
+    line-height: 78px;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.single-reason span img {
+    max-width: 32px;
+}
+.single-reason span img + img{
+    display: none;
+}
+.single-reason:hover span {
+    background: #1b435d;
+}
+.single-reason:hover span img {
+    display: none;
+}
+.single-reason:hover span img + img {
+    display: inline-block;
+}
+.single-reason h3 {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    padding-top: 45px;
+    margin-bottom: 25px;
+}
+.single-reason h3:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background: #ff895d;
+    left: 0;
+    right: 0;
+    top: 15px;
+    margin: auto;
+}
+.single-reason p {
+    font-family: "Work Sans", sans-serif;
+    color: #708390;
+}
