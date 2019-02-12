@@ -1,0 +1,79 @@
+
+/*=============================================
+    08: Review slider
+==============================================*/
+
+.home-review-slider {
+    padding-top: 60px;
+}
+.home-review-slider:before {
+    content: '\f10e';
+    position: absolute;
+    font-family: "FontAwesome";
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    font-size: 30px;
+    color: #ff895d;
+    display: block;
+    text-align: center;
+}
+.home-review-slider .swiper-slide h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.home-review-slider .swiper-slide h3 span {
+    color: #90a0aa;
+    font-weight: normal;
+    display: inline-block;
+}
+.home-review-slider p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #708790;
+    font-family: "Work Sans", sans-serif;
+    margin-bottom: 20px;
+}
+.home-review-slider-two {
+    padding-top: 0;
+}
+.home-review-slider-two:before {
+    content: "";
+}
+.home-review-slider-two .swiper-slide {
+    padding-top: 60px;
+}
+.home-review-slider-two .swiper-slide:before {
+    content: '\f10d';
+    position: absolute;
+    font-family: "FontAwesome";
+    left: 0;
+    top: 0;
+    font-size: 30px;
+    color: #ff895d;
+}
+
+/* Review slider pagination */
+.review-swiper-pagination {
+    position: inherit;
+}
+.review-swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ff895d;
+    background: transparent;
+    opacity: 1;
+    margin: 0 5px;
+}
+.review-swiper-pagination .swiper-pagination-bullet-active {
+    background: #ff895d;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0px !important;
+}
+.swiper-pagination-bullet-active{
+    background: #FF895D;
+}

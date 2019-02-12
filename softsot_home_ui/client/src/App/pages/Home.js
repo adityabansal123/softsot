@@ -1,14 +1,30 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import NavBar from '../../components/NavBar.jsx';
-import Footer from '../../components/Footer.jsx';
+import NavBar from '../../common/NavBar.jsx';
+import Footer from '../../common/Footer.jsx';
+import ClientsReview from '../components/Clients_Review.jsx';
 import performance from '../../images/performance.png';
 import sequrity from '../../images/security.png';
 import spam from '../../images/spam-guard.png';
 import support from '../../images/support.png';
 import '../components/Homepage.css';
+import $ from "jquery";
 
 class Home extends Component{
+    componentDidMount() {
+        var mainBanner = $('.main-banner');
+
+        mainBanner.on('click', '.scroll-down p', function(){
+            var target = mainBanner.next();
+
+            if ( target.length ) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 50
+                }, 500);
+            }
+        });
+    }
+
   render(){
 	return (
 		<div>
@@ -78,6 +94,7 @@ class Home extends Component{
                     </div>
                 </div>
             </section>
+            <ClientsReview/>
             <Footer/>
 	  </div>
 	);

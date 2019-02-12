@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from "../../components/NavBar";
-import Footer from "../../components/Footer";
+import Navbar from "../../common/NavBar";
+import Footer from "../../common/Footer";
 import placeholder from '../../images/member.jpg';
 import '../components/Team.css';
 

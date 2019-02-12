@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from "../../components/NavBar";
-import Footer from "../../components/Footer";
+import Navbar from "../../common/NavBar";
+import Footer from "../../common/Footer";
 import placeholder from '../../images/man-with-ipad.png';
 import '../components/About.css';
 

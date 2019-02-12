@@ -4,11 +4,6 @@ Version: 1.4
 Author: ThemeLooks
 Author url: http://themelooks.com
 
-NOTE:
------
-Please DO NOT EDIT THIS CSS, you may need to use "custom.css" file for writing your custom css.
-We may release future updates so it will overwrite this file. it's better and safer to use "custom.css".
-
 [Table of Content]
 
 01: General CSS 
@@ -738,74 +733,6 @@ header.header{
     border: 1px solid #ffa381;
 }
 
-
-/* 4.3: Scroll button */
-.scroll-down {
-    width: 100%;
-    max-width: 1170px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    position: absolute;
-    bottom: 15px;
-    z-index: 1;
-}
-.scroll-down p {
-    width: 125px;
-    text-align: center;
-    margin: auto;
-    cursor: pointer;
-}
-.scroll-down p span {
-    font-size: 8px;
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-.main-banner-style-two .scroll-down {
-    bottom: 0;
-}
-.main-banner-style-two .scroll-down p {
-    width: 250px;
-    margin: 0;
-    color: #1b435d;
-}
-.main-banner-style-two .scroll-down p i {
-    color: #ff895d;
-}
-.scrollBounce {
-    -webkit-animation: scrollBounce 2s infinite;
-    animation: scrollBounce 2s infinite;
-}
-@-webkit-keyframes scrollBounce {
-    0%, 20%, 50%, 80%, 100% {
-        -webkit-transform: translateY(0);
-                transform: translateY(0);
-    }
-    40% {
-        -webkit-transform: translateY(-5px);
-                transform: translateY(-5px);
-    }
-    60% {
-        -webkit-transform: translateY(-5px);
-                transform: translateY(-5px);
-    }
-}
-@keyframes scrollBounce {
-    0%, 20%, 50%, 80%, 100% {
-        -webkit-transform: translateY(0);
-                transform: translateY(0);
-    }
-    40% {
-        -webkit-transform: translateY(-5px);
-                transform: translateY(-5px);
-    }
-    60% {
-        -webkit-transform: translateY(-5px);
-                transform: translateY(-5px);
-    }
-}
-
 /*=============================================
     15: Back to top button
 ==============================================*/
@@ -934,46 +861,6 @@ header.header{
     background: #ff895d;
     border-color: #ff895d;
 }
-
-/*=============================================
-    21: Single post
-==============================================*/
-
-.single-post-content {}
-.single-post-content h1 {
-    font-weight: 600;
-    font-size: 24px;
-    color: #ff895d;
-    margin-bottom: 20px;
-}
-.single-post-content h2 {
-    font-weight: 500;
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-.single-post-content p {
-    font-family: "Work sans", sans-serif;
-    color: #90a0aa;
-}
-.single-post-content p.quote {
-    font-size: 18px;
-    color: #708790;
-    background: #f4fbff;
-    padding: 35px 30px;
-    width: calc(100% - 40px);
-    margin: 25px auto;
-    position: relative;
-}
-.single-post-content p.quote:before {
-    content: '\f10e';
-    position: absolute;
-    font-family: "FontAwesome";
-    right: 30px;
-    bottom: 20px;
-    font-size: 24px;
-    color: #90a0aa;
-}
-
 /* 21.1: Share */
 .share-wrap {
     border: 1px solid #e0f3ff;
