@@ -9,6 +9,7 @@ import spam from '../../images/spam-guard.png';
 import support from '../../images/support.png';
 import '../components/Homepage.css';
 import $ from "jquery";
+import NeedAssistance from "../components/Need_Assistance";
 
 class Home extends Component{
     componentDidMount() {
@@ -95,6 +96,7 @@ class Home extends Component{
                 </div>
             </section>
             <ClientsReview/>
+            <NeedAssistance/>
             <Footer/>
 	  </div>
 	);

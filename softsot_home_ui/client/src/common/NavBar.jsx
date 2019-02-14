@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
+import logo_orange from '../images/softsot.svg';
+import logo_white from '../images/softsot2.svg';
 
 class Navbar extends Component{
     componentDidMount() {
@@ -26,7 +28,8 @@ class Navbar extends Component{
                             <div className="col-xl-3 col-lg-2 col-md-3 col-sm-5 col-9">
                                 <div className="logo">
                                     <a to="/">
-
+                                        <img src={logo_white} alt="Crypto Cloud" width="162" height="23" />
+                                        <img src={logo_orange} alt="Crypto Cloud" width="0" height="0" />
                                     </a>
                                 </div>
                             </div>
