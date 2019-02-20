@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Team from './pages/Team';
 import ContactUs from './pages/ContactUs';
+import Blog from './pages/Blog';
 import '../common/style.css';
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
 		<Route path='/about' component={About}/>
 		<Route path='/team' component={Team}/>
 		<Route path='/contact' component={ContactUs}/>
+		<Route path='/blog' component={Blog}/>
 	  </switch>
 	</div>
     )

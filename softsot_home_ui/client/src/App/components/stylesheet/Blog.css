@@ -1,0 +1,99 @@
+/*=============================================
+    13: Latest news
+==============================================*/
+
+.single-latest-news {
+    margin-bottom: 20px;
+}
+.single-latest-news h2 {
+    margin-bottom: 0;
+}
+.post-details {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0f3ff;
+}
+.post-details li {
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    color: #90a0aa;
+    position: relative;
+}
+.post-details li:not(:last-child) {
+    padding-right: 10px;
+}
+.post-details li:not(:last-child):before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    background: #e0f3ff;
+    right: -5px;
+    top: 6px;
+}
+.post-details li i {
+    font-size: 12px;
+    margin-right: 8px;
+}
+.post-details li a {
+    color: #708790;
+}
+.post-details li a:hover {
+    color: #1b435d;
+}
+.single-latest-news h2 a {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 33px;
+    color: #1b435d;
+    display: inline-block;
+}
+.single-latest-news h2 a:hover {
+    color: #ff895d;
+}
+.blog-link {
+    margin-top: 15px;
+}
+/*=============================================
+    19: Blog
+==============================================*/
+
+.blog {
+    border-bottom: 1px solid #e0f3ff;
+}
+.blog .single-latest-news {
+    margin-bottom: 50px;
+}
+.single-latest-news > ul:first-child {
+    margin-bottom: 0;
+    padding: 25px 15px 15px;
+    background-color: #f4fbff;
+    border-bottom: 1px solid #e0f3ff;
+}
+.single-latest-news > ul:first-child + h2 {
+    padding: 10px 15px 20px;
+    background-color: #f4fbff;
+}
+
+/* 19.1: Pagination */
+.pagination {
+    margin-top: 55px;
+}
+.pagination li + li {
+    margin-left: 30px;
+}
+.pagination li a {
+    color: #1b435d;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.pagination li.active a,
+.pagination li a:hover {
+    color: #ff895d;
+}
+.pagination li:first-child a i {
+    margin-right: 10px;
+}
+.pagination li:last-child a i {
+    margin-left: 10px;
+}

@@ -17,6 +17,20 @@ class Navbar extends Component{
             }
         });
 
+        $(document).on('click', '.header-menu ul li', function () {
+            activeHeaderMenu();
+        });
+
+        function activeHeaderMenu() {
+            var thisPageUrl = window.location.pathname;
+            $(".header-menu ul li a").each(function(){
+                var attr = $(this).attr('href');
+                if (attr === thisPageUrl) {
+                    $(this).parent().addClass('active');
+                }
+            });
+        }
+        activeHeaderMenu();
 
     }
     render(){
@@ -37,20 +51,21 @@ class Navbar extends Component{
                                 <nav>
                                     <div className='header-menu'>
                                         <ul>
-                                            <li className="active">
+                                            <li>
                                                 <Link to='/'>Home</Link>
                                             </li>
                                             <li>
-                                                <Link to='#'>Pages <i className="fa fa-angle-down"></i></Link>
-                                                <ul>
-                                                    <li><Link to="/team">Team</Link></li>
-                                                    <li><Link to="">Testimonials</Link></li>
-                                                    <li><Link to="">Data Centers</Link></li>
-                                                    <li><Link to="">404</Link></li>
-                                                </ul>
+                                                <Link to='/team'>Team</Link>
+                                                {/*<Link to='#'>Pages <i className="fa fa-angle-down"></i></Link>*/}
+                                                {/*<ul>*/}
+                                                    {/*<li><Link to="/team">Team</Link></li>*/}
+                                                    {/*<li><Link to="">Testimonials</Link></li>*/}
+                                                    {/*<li><Link to="">Data Centers</Link></li>*/}
+                                                    {/*<li><Link to="">404</Link></li>*/}
+                                                {/*</ul>*/}
                                             </li>
                                             <li>
-                                                <Link to=''>Blog</Link>
+                                                <Link to='/blog'>Blog</Link>
                                             </li>
                                             <li>
                                                 <Link to='/about'>About us</Link>
